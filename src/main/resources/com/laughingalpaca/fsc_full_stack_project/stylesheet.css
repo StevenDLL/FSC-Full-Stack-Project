@@ -1,0 +1,36 @@
+#menuBar {
+-fx-background-color: #994800;
+-fx-font-size: 16;
+-fx-font-color: black;
+-fx-font-weight: bold;
+}
+
+#leftPane {
+-fx-background-color: #b87f31;
+}
+
+#tableView {
+-fx-font-size: 16;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+-fx-background-color: #a3a3a3;
+-fx-font-color: #f2f2f2;
+}
+
+
+#rightPane {
+-fx-background-color: #6ce300;
+}
+
+#clearButton, #addButton, #deleteButton, #editButton{
+-fx-background-color: #b87f31;
+-fx-font-size: 16;
+-fx-font-color: black;
+-fx-font-weight: bolder;
+}
+
+
+

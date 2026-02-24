@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.laughingalpaca.fsc_full_stack_project/com.laughingalpaca.fsc_full_stack_project.HelloApplication
+                                com.laughingalpaca.fsc_full_stack_project/com.laughingalpaca.fsc_full_stack_project.AppEntry
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

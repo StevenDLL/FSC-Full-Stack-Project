@@ -1,14 +1,21 @@
 package com.laughingalpaca.fsc_full_stack_project;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 
-public class AppViewController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class AppViewController implements Initializable {
 
     @FXML
     public MenuBar menuBar;
@@ -42,8 +49,35 @@ public class AppViewController {
     @FXML
     public Button addButton;
     @FXML
-    public Button delteButton;
+    public Button deleteButton;
     @FXML
     public Button editButton;
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        imageView.setImage(new Image(String.valueOf(AppEntry.class.getResource("default_picture_by_kliwir_art.png"))));
+
+        HandleButtonActions();
+    }
+
+    private void HandleButtonActions(){
+        clearButton.setOnAction(actionEvent -> {
+            System.out.println("Clear button pressed...");
+        });
+
+        addButton.setOnAction(actionEvent -> {
+            System.out.println("Add button pressed...");
+        });
+
+        deleteButton.setOnAction(actionEvent -> {
+            System.out.println("Delete button pressed...");
+        });
+
+        editButton.setOnAction(actionEvent -> {
+            System.out.println("Edit button pressed...");
+        });
+    }
+
 
 }
